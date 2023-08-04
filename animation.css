@@ -1,0 +1,80 @@
+/* fadeOutDown */
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(2);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -50%, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(2);
+  }
+}
+@-moz-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0) scale(2);
+  }
+  50% {
+    opacity: 1;
+    -moz-transform: translate3d(0, -50%, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0) scale(2);
+  }
+}
+@-o-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0) scale(2);
+  }
+  50% {
+    opacity: 1;
+    -o-transform: translate3d(0, -50%, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    -o-transform: translate3d(0, 0, 0) scale(2);
+  }
+}
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(2);
+  }
+  50% {
+    opacity: 1;
+    transform: translate3d(0, -50%, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(2);
+  }
+}
+
+.u--fadeOutDown {
+  -webkit-animation: fadeOutDown 1s ease-out infinite; /* Add infinite here */
+  -moz-animation: fadeOutDown 1s ease-out infinite; /* Add infinite here */
+  -o-animation: fadeOutDown 1s ease-out infinite; /* Add infinite here */
+  animation: fadeOutDown 1s ease-out infinite; /* Add infinite here */
+}
+.animation {
+  display: inline-block;
+  -webkit-animation: fadeOutDown 3s ease-out infinite; /* Add infinite here */
+  -moz-animation: fadeOutDown 3s ease-out infinite; /* Add infinite here */
+  -o-animation: fadeOutDown 3s ease-out infinite; /* Add infinite here */
+  animation: fadeOutDown 3s ease-out infinite; /* Add infinite here */
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .animation {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+  }
+}
